@@ -1,1 +1,43 @@
-# План еженедельных обновлений\n\nРекомендуемая конфигурация GitHub Action для автоматического обновления MEMORY.md каждую неделю.\n\n```yaml\nname: Weekly Memory Update\n\non:\n  schedule:\n    # Каждый понедельник в 10:00 UTC\n    - cron: '0 10 * * 1'\n  workflow_dispatch:  # Позволяет запускать вручную\n\njobs:\n  update-memory:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v3\n\n      - name: Update timestamp\n        run: |\n          DATE=$(date +"%Y-%m-%d")\n          echo "# Еженедельное обновление от $DATE" > update.txt\n          echo "" >> update.txt\n          echo "- Проверены KPI и SLA для 12 агентов" >> update.txt\n          echo "- Оценка прогресса масштабирования" >> update.txt\n          echo "- Обновление метрик и финансовых показателей" >> update.txt\n          echo "" >> update.txt\n          cat update.txt MEMORY.md > MEMORY.new\n          mv MEMORY.new MEMORY.md\n          rm update.txt\n\n      - name: Commit and push changes\n        run: |\n          git config --local user.email "action@github.com"\n          git config --local user.name "GitHub Action"\n          git add MEMORY.md\n          git commit -m "Еженедельное обновление MEMORY.md [автоматическое]"\n          git push\n```\n\n**Примечание:** Для настройки этого workflow требуется токен с правами . Создайте файл  с этим содержимым, когда будет доступен токен с нужными правами.
+# План еженедельных обновлений
+
+Рекомендуемая конфигурация GitHub Action для автоматического обновления MEMORY.md каждую неделю.
+
+```yaml
+name: Weekly Memory Update
+
+on:
+  schedule:
+    # Каждый понедельник в 10:00 UTC
+    - cron: '0 10 * * 1'
+  workflow_dispatch:  # Позволяет запускать вручную
+
+jobs:
+  update-memory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update timestamp
+        run: |
+          DATE=$(date +"%Y-%m-%d")
+          echo "# Еженедельное обновление от $DATE" > update.txt
+          echo "" >> update.txt
+          echo "- Проверены KPI и SLA для 12 агентов" >> update.txt
+          echo "- Оценка прогресса масштабирования" >> update.txt
+          echo "- Обновление метрик и финансовых показателей" >> update.txt
+          echo "" >> update.txt
+          cat update.txt MEMORY.md > MEMORY.new
+          mv MEMORY.new MEMORY.md
+          rm update.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add MEMORY.md
+          git commit -m "Еженедельное обновление MEMORY.md [автоматическое]"
+          git push
+```
+
+**Примечание:** Для настройки этого workflow требуется токен с правами `workflow`. Создайте файл `.github/workflows/weekly-update.yml` с этим содержимым, когда будет доступен токен с нужными правами.
