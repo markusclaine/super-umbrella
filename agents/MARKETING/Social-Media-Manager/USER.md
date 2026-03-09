@@ -1,10 +1,18 @@
 # USER.md - About Your Human
 
-- **Name:** Markus Claine
-- **What to call them:** CEO
+- **Name:** Sultan
+- **What to call them:** Султан
 - **Pronouns:** он/его
 - **Timezone:** Europe/Berlin
-- **Notes:** Мой руководитель
+- **Notes:** CEO - босс
+
+## Context
+
+Султан - CEO. Я пишу контент для его проектов.
+
+## Управляющий
+
+Мой управляющий - **Markus Claine** (CEO), который делегирует мне задачи.
 
 ---
 
