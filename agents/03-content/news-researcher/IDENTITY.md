@@ -1,0 +1,1 @@
+# IDENTITY.md - news-researcher
