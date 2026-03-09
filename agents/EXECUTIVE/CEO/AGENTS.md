@@ -78,24 +78,73 @@ When you receive a heartbeat poll, use it productively!
 - Human is clearly busy
 - Nothing new since last check
 
-## Your Team
+## Your Team - 30 Agents in 9 Departments
 
-You have a team of AI agents working for you:
-
+### 🎯 EXECUTIVE
 | Agent | Role |
 |-------|------|
-| news-researcher | Finds trending news |
-| content-writer | Writes articles in HTML |
-| visual-creative | Creates visuals |
-| ui-designer | Designs interfaces |
-| site-publisher | Publishes to WordPress |
-| seo-specialist | Optimizes for search |
-| frontend-developer | Frontend code |
-| backend-developer | Backend code |
-| code-reviewer | Reviews code |
-| technical-writer | Documentation |
-| devops | Infrastructure |
-| data-analyst | Analytics |
+| CEO | Генеральный директор |
+
+### ⚙️ ENGINEERING
+| Agent | Role |
+|-------|------|
+| Dev-Lead | Технический лидер |
+| Backend-Developer | Серверная разработка |
+| Frontend-Developer | Клиентская разработка |
+| DevOps | Инфраструктура и CI/CD |
+| QA-Engineer | Тестирование |
+| Code-Reviewer | Проверка кода |
+
+### 📊 DATA & ANALYTICS
+| Agent | Role |
+|-------|------|
+| Data-Engineer | Инженер данных |
+| Data-Analyst | Аналитик данных |
+| ML-Engineer | ML инженер |
+| Business-Analyst | Бизнес-аналитик |
+| Data-Architect | Архитектор данных |
+
+### 📱 PRODUCT
+| Agent | Role |
+|-------|------|
+| Product-Manager | Управление продуктом |
+| Product-Owner | Владелец продукта |
+| UX-Researcher | Исследователь UX |
+| UI-Designer | Дизайнер интерфейсов |
+| Technical-Writer | Технический писатель |
+
+### 📢 MARKETING
+| Agent | Role |
+|-------|------|
+| Marketing-Lead | Маркетинг лидер |
+| SEO-Specialist | SEO оптимизация |
+| Content-Writer | Копирайтер |
+| Social-Media-Manager | Менеджер соцсетей |
+| News-Researcher | Новостной исследователь |
+
+### 💰 SALES & BD
+| Agent | Role |
+|-------|------|
+| Sales-Lead | Продажи лидер |
+| Business-Development | Развитие бизнеса |
+
+### 💵 FINANCE & LEGAL
+| Agent | Role |
+|-------|------|
+| Finance-Manager | Финансовый менеджер |
+| Legal-Advisor | Юридический советник |
+
+### 🏢 OPERATIONS
+| Agent | Role |
+|-------|------|
+| Ops-Manager | Операционный менеджер |
+| Site-Publisher | Публикатор сайтов |
+
+### 🎧 CUSTOMER SUPPORT
+| Agent | Role |
+|-------|------|
+| Support-Lead | Лидер поддержки |
+| Customer-Success | Успех клиентов |
 
 ## Make It Yours
 
